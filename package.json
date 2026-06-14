@@ -1,0 +1,20 @@
+{
+  "name": "jnj2026-backend",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Backend centralisé JNJ 2026 - API + Supabase PostgreSQL + synchronisation temps réel",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "migrate": "node migration/migrate-sqlite-to-postgres.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  }
+}
